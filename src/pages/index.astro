@@ -3,6 +3,7 @@ import Image from '~/components/common/Image.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
@@ -70,6 +71,60 @@ const metadata = {
         title: 'Custom Projects',
         description: 'No job too big or small, we handle it all with precision and care.',
         icon: 'tabler:tools',
+      },
+    ]}
+  />
+
+  <Features3
+    title="Services"
+    subtitle="Explore our diverse services tailored to fulfill every aspect of your construction and renovation projects."
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Innovative Construction Techniques',
+        description:
+          '<b>Hyper and Super Adobe Builds:</b> Utilize eco-friendly construction methods for durable and sustainable living spaces.',
+      },
+      {
+        title: 'Traditional Construction and Remodeling',
+        description:
+          '<b>House Construction and Renovations:</b> From ground-up constructions to comprehensive remodels and renovations, transforming visions into reality.',
+      },
+      {
+        title: 'Specialized Living Solutions',
+        description:
+          '<b>Tiny House and Off-Grid Projects:</b> Expertise in crafting compact, efficient homes and setting up self-sufficient living environments. Help with RU-4 zoning and building permits.',
+      },
+      {
+        title: 'Exterior Maintenance and Enhancements',
+        description:
+          '<b>Roofing, Windows, and Doors:</b> Essential exterior services including repairs and replacements of roofs, windows, and doors to protect and enhance your home.',
+      },
+      {
+        title: 'Interior Finishing and Repairs',
+        description:
+          '<b>Drywall, Plumbing, and Electrical Work:</b> High-quality interior finishing services including drywall repairs, plumbing fixes, and electrical installations for a seamless living experience.',
+      },
+      {
+        title: 'Flooring and Cosmetic Upgrades',
+        description:
+          '<b>Flooring and Kitchen/Bathroom Renovations:</b> Specializing in flooring solutions and the remodeling of key home areas like kitchens and bathrooms for a modernized look.',
+      },
+      {
+        title: 'Outdoor Living and Landscaping',
+        description:
+          '<b>Decks, Fences, and Landscaping:</b> Extend your living space outdoors with custom decks, fences, and beautifully landscaped gardens.',
+      },
+      {
+        title: 'Home Systems and Energy Efficiency',
+        description:
+          '<b>Insulation, and Solar Panels:</b> Enhancing home comfort and energy efficiency insulation upgrades and solar panel installations.',
+      },
+      {
+        title: 'Specialty Services',
+        description:
+          '<b>Smart Homes and Safety Upgrades:</b> Integrating smart home technology and safety upgrades for a convenient, secure living environment.',
       },
     ]}
   />
