@@ -1,0 +1,209 @@
+---
+import Image from '~/components/common/Image.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+
+const metadata = {
+  title: 'Colony Construction',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <div class="flex overflow-hidden w-full h-screen justify-center items-center relative">
+    <Image
+      src="~/assets/images/photo_2024-02-22 19.30.30.jpeg"
+      class="w-full h-full object-cover"
+      alt=""
+      loading="lazy"
+      decoding="async"
+    />
+    <div class="absolute inset-0 z-1 flex bg-gradient-to-b from-transparent via-10% via-transparent to-black"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 text-white">
+        Colony Construction Building Dreams
+      </h1>
+      <h2 class="font-bold leading-tighter tracking-tighter mb-4 text-white">
+        Remodels, New Home Construction, any size jobs in Bisbee, Arizona,<br /> Cochise County and beyond
+      </h2>
+    </div>
+  </div>
+
+  <!-- <Hero
+    tagline="Colony Construction"
+    title="Building Dreams"
+    subtitle="Remodels, New Home Construction, any size jobs in Bisbee, Arizona,<br /> Cochise County and beyond"
+    actions={[{ variant: 'primary', text: 'Get a Free Quotes', href: '#contact' }]}
+    image={{
+      src: '~/assets/images/hero-dome.jpg',
+      alt: '',
+    }}
+  /> -->
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Comprehensive Construction Solutions"
+    subtitle="Tailored to You"
+    columns={3}
+    items={[
+      {
+        title: 'Home Remodels',
+        description: 'Transform your existing space. Kitchens, Bathrooms, and more.',
+        icon: 'tabler:hammer',
+      },
+      {
+        title: 'New Home Construction',
+        description: 'Bring your vision of a perfect home to life from the ground up.',
+        icon: 'tabler:home-eco',
+      },
+      {
+        title: 'Custom Projects',
+        description: 'No job too big or small, we handle it all with precision and care.',
+        icon: 'tabler:tools',
+      },
+    ]}
+  />
+
+  <Hero2
+    tagline="Meet Your Local Licensed Contractor:"
+    title="Andrew Anderson"
+    subtitle="At Colony Construction, we pride ourselves on turning visions into reality. Andrew Anderson, with a keen eye for detail and a steadfast commitment to quality, offers top-notch construction services ranging from home remodels to grand new constructions. Based in Bisbee, AZ we extend our expertise across Cochise County and throughout the state of Arizona. No project is too big or small for us. Trust us to navigate the complexities of your construction needs with precision and care."
+    actions={[
+      { variant: 'primary', text: 'Get a Free Quote', href: '#contact', icon: 'tabler:square-rounded-arrow-right' },
+    ]}
+    image={{
+      src: '~/assets/images/photo_2024-02-22 19.30.17.jpeg',
+      alt: 'Andrew Anderson Colony Construction',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Experience',
+        description: 'We bring a wealth of knowledge to every project in Bisbee, Arizona and beyond.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Trust',
+        description: 'Licensed and authorized to undertake both residential and commercial projects.',
+        icon: 'tabler:shield',
+      },
+      {
+        title: 'Personalized Service',
+        description:
+          'Andrew personally oversees each project to ensure it meets our high standards and your personal needs.',
+        icon: 'tabler:sparkles',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/photo_2024-02-22 19.29.43.jpeg',
+      alt: 'Colony Construction Benefits',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Why Colony Construction is the Right Choice for Your Project
+      </h3>
+      <p class="mt-4 text-muted">Tailored Craftsmanship for Every Project</p>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <!-- <Testimonials
+    title="Words from real customers"
+    testimonials={[
+      {
+        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
+        name: 'Emily Kennedy',
+        job: 'Front-end developer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'Emily Kennedy Image',
+        },
+      },
+      {
+        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
+        name: 'Sarah Hansen',
+        job: 'Photographer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Sarah Hansen Image',
+        },
+      },
+      {
+        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
+        name: 'Mark Wilkinson',
+        job: 'Small business owner',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Mark Wilkinson Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_blank',
+      text: 'More testimonials...',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Why AstroWind?',
+        description:
+          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+      },
+      {
+        title: 'What do I need to start?',
+        description:
+          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+      },
+      {
+        title: 'How to install the Astro + Tailwind CSS template?',
+        description:
+          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+      },
+      {
+        title: "What's something that you don't understand?",
+        description:
+          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+      },
+      {
+        title: 'What is something that you would like to try again?',
+        description:
+          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+      },
+      {
+        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        description:
+          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+      },
+    ]}
+  /> -->
+
+  <WidgetWrapper>
+    <section class="relative md:-mt-[76px] not-prose">
+      <div id="contact" class="relative max-w-7xl mx-auto px-4 sm:px-6"></div>
+    </section>
+  </WidgetWrapper>
+</Layout>

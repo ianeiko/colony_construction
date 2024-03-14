@@ -1,0 +1,16 @@
+---
+import { SITE } from '~/utils/config';
+import Image from '~/components/common/Image.astro';
+---
+
+<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold whitespace-nowrap">
+  {SITE?.name}
+  <!-- <Image
+    src="~/assets/images/logo-small.png"
+    class="rounded bg-white"
+    alt="Promise Domes"
+    layout="cover"
+    loading="lazy"
+    decoding="async"
+  /> -->
+</span>
