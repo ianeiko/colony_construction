@@ -8,6 +8,7 @@ import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
+import Grid from '~/components/blog/Grid.astro';
 
 const metadata = {
   title: 'Colony Construction',
@@ -203,7 +204,48 @@ const metadata = {
 
   <WidgetWrapper>
     <section class="relative md:-mt-[76px] not-prose">
-      <div id="contact" class="relative max-w-7xl mx-auto px-4 sm:px-6"></div>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-6">Our work</h3>
+      <div class="grid gap-6 row-gap-5 md:grid-cols-2 lg:grid-cols-4 -mb-6">
+        <article class="mb-6 transition">
+          <div class="relative md:h-64 mb-6">
+            <Image
+              src="~/assets/images/photo_2024-02-22 19.30.16.jpeg"
+              alt="Installed new click in floating flooring"
+            />
+            <p class="text-muted dark:text-slate-400 text-lg">Installed new click in floating flooring</p>
+          </div>
+        </article>
+        <article class="mb-6 transition">
+          <div class="relative md:h-64 mb-6">
+            <Image
+              src="~/assets/images/photo_2024-02-22 19.30.09.jpeg"
+              alt="Isolated footing foundation repair. This house was in rough shape and sagging a lot. We went in, jacked up the home and re-poured new foundation blocks."
+            />
+            <p class="text-muted dark:text-slate-400 text-lg">
+              Isolated footing foundation repair. We jacked up the house and re-poured new foundation blocks.
+            </p>
+          </div>
+        </article>
+        <article class="mb-6 transition">
+          <div class="relative md:h-64 mb-6">
+            <Image src="~/assets/images/photo_2024-02-22 19.30.11.jpeg" alt="Colony Construction" />
+            <p class="text-muted dark:text-slate-400 text-lg">Re-shingling 2 sheds</p>
+          </div>
+        </article>
+        <article class="mb-6 transition">
+          <div class="relative md:h-64 mb-6">
+            <Image src="~/assets/images/photo_2024-02-22 19.29.56.jpeg" alt="Colony Construction" />
+            <p class="text-muted dark:text-slate-400 text-lg">Laying out Hyper Adobe</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </WidgetWrapper>
+
+  <WidgetWrapper>
+    <section class="relative md:-mt-[76px] not-prose">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-6">Request a Free Quote</h3>
+      <div id="contact" class="relative max-w-7xl mx-auto"></div>
     </section>
   </WidgetWrapper>
 </Layout>
